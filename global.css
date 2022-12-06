@@ -1,0 +1,109 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+
+  --font-outfit: 'Outfit', sans-serif;
+  --font-weight-title: 700;
+  --font-weight-text: 400;
+  --font-text-size: 15px;
+  --font-title-size: 20px;
+
+  --Moble-width: 375px;
+  --Desktop-width: 1440px;
+
+  --card-width: 18rem;
+  --card-border-radius: 20px;
+  --image-border-radius: calc(var(--card-border-radius) - 10px);
+}
+
+body {
+  background-color: var(--Light-gray);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: var(--card-width);
+  padding: 1rem;
+  border-radius: var(--card-border-radius);
+  background-color: var(--White);
+}
+
+.card__image_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card__image {
+  border-radius: var(--image-border-radius);
+  width: 100%;
+}
+
+.card__title {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--Dark-blue);
+  margin: auto;
+  font-family: var(--font-outfit);
+  font-weight: var(--font-weight-title);
+  font-size: var(--font-title-size);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card__text {
+  font-size: var(--font-text-size);
+  text-align: center;
+  color: var(--Grayish-blue);
+  font-family: var(--font-outfit);
+  font-weight: var(--font-weight-text);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* WhaleWellWell Button Style */
+.button-whale {
+  --button-whale-background: rgb(63, 72, 255);
+  --button-whale-background-hover: rgb(57, 64, 180);
+  --button-whale-text: rgb(209, 220, 255);
+  --button-whale-border-radius: 1rem;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.364));
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  border-radius: var(--button-whale-border-radius);
+  background-color: var(--button-whale-background);
+  transition: all 300ms ease-in-out;
+}
+
+.button-whale__text {
+  font-family: var(--font-outfit);
+  color: var(--button-whale-text);
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.button-whale:hover {
+  transform: scale(105%);
+  background-color: var(--button-whale-background-hover);
+}
+
+.button-whale__text-icon {
+  font-size: 1.1em !important;
+}
