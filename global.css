@@ -13,7 +13,7 @@
   --Moble-width: 375px;
   --Desktop-width: 1440px;
 
-  --card-width: 19rem;
+  --card-width: 18.2rem;
   --card-border-radius: 20px;
   --image-border-radius: calc(var(--card-border-radius) - 10px);
 }
