@@ -23,7 +23,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,12 +35,6 @@ body {
   border-radius: var(--card-border-radius);
   background-color: var(--White);
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
-}
-
-.card__image_wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .card__image {
@@ -81,7 +75,7 @@ body {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  padding: 1rem;
+  padding: .5rem;
   margin: 0;
   border: 0;
   text-decoration: none;
@@ -95,7 +89,7 @@ body {
   color: var(--button-whale-text);
   padding: 0;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.3em;
   display: flex;
   align-items: center;
 }
